@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lp1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Buscar Clientes"
+        android:textColor="#0096C3"
+        android:textSize="150px" />
+
+    <EditText
+        android:id="@+id/edtCodigoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:hint="Código del Cliente"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B030F4"
+        android:fontFamily="sans-serif-black"
+        android:text="Buscar"
+        android:textColor="#A7FB6A" />
+
+    <ListView
+        android:id="@+id/lstDatos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F3BB89"
+        android:backgroundTint="#B9D1F4"
+        android:divider="@color/white"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>
